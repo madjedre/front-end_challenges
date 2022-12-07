@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'montserrat', arial, sans-serif;
+            min-height: 100vh;
+            background-color: #f3e9e4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .product-card {
+            background-color: #fff;
+            overflow: hidden;
+            width: 500px;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        
+        .product-card-image {
+            flex: 50%;
+            max-width: 50%;
+        }
+        
+        .product-card-description {
+            padding: 20px;
+            flex: 50%;
+            max-width: 50%;
+        }
+        
+        .product-card-description p {
+            font-size: 13px;
+        }
+        
+        .product-card-description h1 {
+            font-family: 'fraunces';
+        }
+        
+        .price-tag {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .price-tag h1 {
+            color: #418250;
+        }
+        
+        .add-to-card {
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            background-color: #418250;
+            cursor: pointer;
+            font-size: 14px;
+            padding: 15px;
+            font-weight: bold;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .add-to-card:hover,
+        .add-to-card:active {
+            background-color: #30603b;
+        }
+        
+        .add-to-card img {
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-card {
+                flex-direction: column;
+            }
+            .product-card-image,
+            .product-card-description {
+                flex: 100%;
+                max-width: 100%;
+            }
+            img.product-card-image {
+                content: url('images/image-product-mobile.jpg');
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="product-card">
+        <img src="images/image-product-desktop.jpg" alt="The product's image" class="product-card-image" width="100%">
+        <div class="product-card-description">
+            <p>P E R F U M E</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p>A floral, solar and voluptuous interpretation composed by olivier polge, Perfumer-Creator for the House of CHANEL.</p>
+            <div class="price-tag">
+                <h1>$149.99</h1>
+                <p>$169.99</p>
+            </div>
+            <button onclick="" class="add-to-card"><img src="images/icon-cart.svg"> Add to Cart</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
