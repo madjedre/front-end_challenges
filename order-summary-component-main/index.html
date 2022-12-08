@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        span,
+        button {
+            color: hsl(223, 47%, 23%);
+            font-weight: 700;
+        }
+        
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 16px;
+            min-height: 100vh;
+            margin: 0;
+            background: hsl(224, 23%, 55%) url('./images/pattern-background-desktop.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: hsl(224, 23%, 55%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .order-summary-card {
+            width: 375px;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+        }
+        
+        .card-image {
+            width: 100%;
+        }
+        
+        .card-description {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .card-plan-container {
+            background-color: hsl(225, 100%, 98%);
+            border-radius: 10px;
+            padding: 5px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .card-plan {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10px;
+            align-items: center;
+        }
+        
+        .primary-btn {
+            margin-top: 30px;
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            padding: 15px;
+            cursor: pointer;
+            background-color: hsl(245, 75%, 52%);
+            color: white;
+            box-shadow: 0 15px 30px hsl(224, 23%, 55%);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .primary-btn:hover,
+        .primary-btn:active {
+            background-color: hsl(228, 45%, 44%);
+        }
+        
+        .cancel-btn {
+            margin-top: 10px;
+            border: none;
+            background: transparent;
+            color: hsl(224, 23%, 55%);
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .cancel-btn:hover,
+        .cancel-btn:active {
+            color: hsl(223, 47%, 23%);
+        }
+        
+        @media (max-width:375px) {
+            body {
+                background: hsl(224, 23%, 55%) url('./images/pattern-background-mobile.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="order-summary-card">
+        <img src="images/illustration-hero.svg" alt="A girl enjoying music" class="card-image">
+        <div class="card-description">
+            <h2>
+                <span>Order Summary</span>
+            </h2>
+            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+            <div class="card-plan-container">
+                <div class="card-plan">
+                    <img src="images/icon-music.svg" alt="A music icon">
+                    <p><span>Annual Plan</span><br> $59.99/year</p>
+                </div>
+                <p><a href="/">Change</a></p>
+            </div>
+            <button onclick="" class="primary-btn">Proceed to Payment</button>
+            <button onclick="" class="cancel-btn">Cancel Order</button>
+        </div>
+
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">justdzdcode</a>.
+    </div>
+</body>
+
+</html>
