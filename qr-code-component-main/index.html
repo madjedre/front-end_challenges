@@ -20,7 +20,7 @@
         body {
             min-height: 100vh;
             font-family: 'didact gothic', sans-serif;
-            background-color: #b6c8d6;
+            background-color: hsl(212, 45%, 89%);
             margin: 0;
             display: flex;
             align-items: center;
@@ -28,11 +28,11 @@
         }
         
         .qr-code-container {
-            width: 200px;
-            background-color: white;
+            width: 1440px;
+            background-color: hsl(0, 0%, 100%);
             border-radius: 10px;
             padding: 10px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 5px hsl(218, 44%, 22%);
         }
         
         .qr-code-image {
@@ -49,6 +49,13 @@
         
         .qr-code-description p {
             font-size: 10px;
+            color: hsl(220, 15%, 55%);
+        }
+        
+        @media (max-width: 768px) {
+            .qr-code-container {
+                width: 375px;
+            }
         }
     </style>
 </head>
@@ -69,6 +76,15 @@
 
     </div>
 
+
+
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#your-web-site-url.html">justdzdcode</a>.
+    </div>
 
 </body>
 

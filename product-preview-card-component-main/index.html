@@ -12,15 +12,15 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
         * {
             box-sizing: border-box;
         }
         
         body {
-            font-family: 'montserrat', arial, sans-serif;
+            font-family: 'montserrat';
             min-height: 100vh;
-            background-color: #f3e9e4;
+            background-color: hsl(30, 38%, 92%);
             margin: 0;
             display: flex;
             justify-content: center;
@@ -28,9 +28,9 @@
         }
         
         .product-card {
-            background-color: #fff;
+            background-color: hsl(0, 0%, 100%);
             overflow: hidden;
-            width: 500px;
+            width: 1440px;
             border-radius: 10px;
             display: flex;
             flex-flow: row nowrap;
@@ -48,7 +48,8 @@
         }
         
         .product-card-description p {
-            font-size: 13px;
+            font-size: 14px;
+            color: hsl(228, 12%, 48%);
         }
         
         .product-card-description h1 {
@@ -63,7 +64,7 @@
         }
         
         .price-tag h1 {
-            color: #418250;
+            color: hsl(158, 36%, 37%);
         }
         
         .add-to-card {
@@ -71,7 +72,7 @@
             border: none;
             border-radius: 6px;
             color: white;
-            background-color: #418250;
+            background-color: hsl(158, 36%, 37%);
             cursor: pointer;
             font-size: 14px;
             padding: 15px;
@@ -84,7 +85,7 @@
         
         .add-to-card:hover,
         .add-to-card:active {
-            background-color: #30603b;
+            background-color: hsl(212, 21%, 14%);
         }
         
         .add-to-card img {
@@ -93,6 +94,7 @@
         
         @media (max-width: 768px) {
             .product-card {
+                width: 375px;
                 flex-direction: column;
             }
             .product-card-image,
@@ -124,6 +126,15 @@
     </div>
 
 
+
+
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#your-web-site-url.html">justdzdcode</a>.
+    </div>
 
 </body>
 
